@@ -22,5 +22,12 @@ class Doctor
       appt.doctor == self 
       appt.doctor 
   end 
-
+  
+  def patients 
+    Appointment.all.collect do |appt|
+      appt.doctor == self 
+      appt.doctor
+  end 
+  
+  
 end 
