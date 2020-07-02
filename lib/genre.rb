@@ -20,7 +20,7 @@ class Genre
   end 
 
   def artists 
-    Artist.all.collect do |song|
+    Song.all.collect do |song|
       song.artist == self 
     end 
   end 
